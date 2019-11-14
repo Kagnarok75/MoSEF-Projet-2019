@@ -10,7 +10,7 @@ else
         echo "$res"
 fi
 
-
+find ${res} -name $1
 
 
 
