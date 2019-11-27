@@ -30,7 +30,7 @@ Lorsqu'il y a deux arguments, le premier argument à le même but que dans le de
 
 Dans l'exemple suivant au sein du dossier "lab1" je cherche tous les fichiers ayant comme nom commencant par "fichier" qui contiennent le mot "sorbonne".
 
-![Exemple](https://github.com/Kagnarok75/MoSEF-Projet-2019/blob/master/Images/projet2.png)
+![Exemple](https://github.com/Kagnarok75/MoSEF-Projet-2019/blob/master/Images/projet3.png)
 
 Vous pouvez voir le code qui a permis de trouver les resultats précédents ci dessous :
 
