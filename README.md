@@ -2,34 +2,37 @@
 ## Karim Alexis BOUABID
 Projet Master 2 MoSEF (U. Paris 1)
 
-Salam a tous mes amis.
+Salam à tous mes amis.
 
 Voici un projet universitaire dans le cadre d'un cours portant sur Linux et git.
 
 Le but du projet est d'écrire un script *search_fichiers* qui peut s'executer sans argument, avec un argument ou deux arguments.
 
-## pas d'argument : Souhaite la bienvenue de l'utilisateur et demande le dossier recherché.
+### Pas d'argument : souhaite la bienvenue à l'utilisateur et demande le dossier recherché.
 
-Lorsque qu'aucun argument n'est entré lors de l'execution du script, ce dernier propose a l'utilisateur de renseigner un nom de dossier qu'il souhaite localiser et si ce dossier existe le resultat affichera tous les chemins contenant ce dossier.
+Lorsque aucun argument n'est entré lors de l'execution du script, ce dernier propose à l'utilisateur de renseigner un nom de dossier qu'il souhaite localiser et si ce dossier existe le resultat affichera tous les chemins menant vers ce dossier.
+
 Dans l'exemple suivant l'utilisateur cherche les differents emplacement d'un dossier se nommant "lab1".
 
 ![Exemple](https://github.com/Kagnarok75/MoSEF-Projet-2019/blob/master/Images/projet1.png)
 
-## un argument : recherche d'un ou de plusieurs fichiers respectant un pattern particulier.
+### Un argument : recherche d'un ou de plusieurs fichiers respectant un pattern particulier dans le nom.
 
-Lorsqu'un argument est renseigné le but du script est de rechercher dans le dossier qu'on souhaite localiser cette fois ci un fichier respectant un pattern particulier dans son nom.
+Lorsqu'un argument est renseigné, le but du script est de rechercher dans le dossier qu'on souhaite localiser cette fois ci un fichier respectant un pattern particulier dans son nom.
+
 Dans l'exemple suivant, je donne un premier argument "fichier*" qui indique que je recherche tous les fichiers commençant par "fichier". Puis comme dans le premier exemple le script demande à l'utilisateur dans quel dossier se trouve la recherche.
 
 ![Exemple](https://github.com/Kagnarok75/MoSEF-Projet-2019/blob/master/Images/projet2.png)
 
-## deux arguments : recherche d'un texte ecrits dans les fichiers recherchés.
+### Deux arguments : recherche d'un fichier qui dans son contenu contient une chaine de caractères bien précise.
 
-Lorsqu'il y a deux arguments, le premier argument a le meme but que dans le deuxieme exemple, parcontre le deuxieme arguments qui represente une chaine de caractères qu'on recherche va permettre d'avoir en resultat tous les fichiers contenant ce texte. (à noter que le texte recherché est insensible à la casse) 
-Dans l'exemple suivant au sein du dossier "lab1" je cherche tous les fichiers ayant comme nom commencant par "fichier" qui contiennent le mot "sorbonne"
+Lorsqu'il y a deux arguments, le premier argument à le même but que dans le deuxieme exemple, parcontre le deuxieme argument qui represente une chaine de caractères qu'on recherche va permettre d'avoir en resultat tous les fichiers contenant ce texte. (à noter que le texte recherché est insensible à la casse)
+
+Dans l'exemple suivant au sein du dossier "lab1" je cherche tous les fichiers ayant comme nom commencant par "fichier" qui contiennent le mot "sorbonne".
 
 ![Exemple](https://github.com/Kagnarok75/MoSEF-Projet-2019/blob/master/Images/projet2.png)
 
-Vous pouvez voir le code qui a permit de trouver ces resultats ci dessous :
+Vous pouvez voir le code qui a permis de trouver les resultats précédents ci dessous :
 
 ``` 
 #!/bin/bash
